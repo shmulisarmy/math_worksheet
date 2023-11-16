@@ -28,3 +28,9 @@ let q2 = document.getElementById('q2');
 let corrects = 0;
 let incorrects = 0;
 set_up_question();
+
+window.addEventListener('keydown', event => {
+    if (event.key == 'Enter'){
+        submit()
+    }
+})
